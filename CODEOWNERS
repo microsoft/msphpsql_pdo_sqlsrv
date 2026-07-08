@@ -1,6 +1,6 @@
 # CODEOWNERS for microsoft/msphpsql_pdo_sqlsrv (PIE companion repo)
 #
-# TODO: Uncomment the line below and replace it with the correct GitHub team or
-# usernames before enabling required reviews / branch protection. It is left
-# commented out so GitHub does not flag an unknown owner on this public repo.
-# * @microsoft/msphpsql-team
+# Default owners for everything in this repo. They are automatically requested
+# for review on every pull request, and become required reviewers once branch
+# protection enables required reviews.
+* @jahnvi480 @David-Engel @sumitmsft
