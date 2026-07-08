@@ -1,0 +1,38 @@
+{
+    "name": "microsoft/pdo_sqlsrv",
+    "description": "Microsoft Drivers for PHP for SQL Server (PDO_SQLSRV) - PDO driver for connecting to Microsoft SQL Server and Azure SQL.",
+    "type": "php-ext",
+    "license": "MIT",
+    "keywords": [
+        "pdo_sqlsrv",
+        "pdo",
+        "sqlserver",
+        "mssql",
+        "azure-sql",
+        "database",
+        "odbc",
+        "microsoft"
+    ],
+    "homepage": "https://github.com/microsoft/msphpsql_pdo_sqlsrv",
+    "support": {
+        "issues": "https://github.com/microsoft/msphpsql/issues",
+        "source": "https://github.com/microsoft/msphpsql",
+        "docs": "https://learn.microsoft.com/sql/connect/php/microsoft-php-driver-for-sql-server"
+    },
+    "require": {
+        "php": ">=8.3",
+        "ext-pdo": "*"
+    },
+    "php-ext": {
+        "extension-name": "pdo_sqlsrv",
+        "priority": 20,
+        "support-zts": true,
+        "support-nts": true,
+        "download-url-method": [
+            "pre-packaged-source"
+        ],
+        "os-families-exclude": [
+            "windows"
+        ]
+    }
+}

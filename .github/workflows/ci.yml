@@ -1,0 +1,29 @@
+# Minimal CI for the microsoft/pdo_sqlsrv PIE companion package.
+# Validates the PIE/Composer metadata on every push and pull request.
+# Note: pin actions to commit SHAs if required by your org policy before use.
+name: CI
+
+on:
+  push:
+    branches: [ dev ]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate composer.json
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          tools: composer
+
+      - name: Validate composer metadata
+        run: composer validate --strict --no-check-lock --no-check-publish

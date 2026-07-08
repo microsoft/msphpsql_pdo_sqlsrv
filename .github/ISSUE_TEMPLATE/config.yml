@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Driver bugs & questions (main repository)
+    url: https://github.com/microsoft/msphpsql/issues
+    about: For issues in the PDO_SQLSRV driver itself, please use the main msphpsql repository.
+  - name: Documentation
+    url: https://learn.microsoft.com/sql/connect/php/microsoft-php-driver-for-sql-server
+    about: Microsoft Drivers for PHP for SQL Server documentation.

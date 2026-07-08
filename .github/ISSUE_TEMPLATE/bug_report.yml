@@ -1,0 +1,51 @@
+name: Bug report
+description: Report a problem installing or using the pdo_sqlsrv extension via PIE
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For bugs in the **driver itself**, please file in the main repository:
+        https://github.com/microsoft/msphpsql/issues
+        Use this tracker only for issues specific to the PIE / Packagist package.
+  - type: input
+    id: pie-version
+    attributes:
+      label: PIE version
+      placeholder: "e.g. 1.4.8 (run: pie --version)"
+    validations:
+      required: true
+  - type: input
+    id: php-version
+    attributes:
+      label: PHP version and build
+      placeholder: "e.g. 8.3.10 nts x86_64"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "e.g. Ubuntu 24.04, Windows 11, macOS 14"
+    validations:
+      required: true
+  - type: input
+    id: driver-version
+    attributes:
+      label: Extension / driver version
+      placeholder: "e.g. 5.13.0"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Include the exact `pie install` command and the full output or error.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: false
