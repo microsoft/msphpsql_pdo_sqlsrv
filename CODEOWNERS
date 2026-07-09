@@ -3,4 +3,4 @@
 # Default owners for everything in this repo. They are automatically requested
 # for review on every pull request, and become required reviewers once branch
 # protection enables required reviews.
-* @jahnvi480 @David-Engel @sumitmsft
+* @microsoft/msphpsql-owners
