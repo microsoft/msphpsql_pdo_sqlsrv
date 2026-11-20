@@ -32,7 +32,7 @@ with PHP by default). PIE enforces this via the `ext-pdo` requirement.
 
 ## Requirements
 
-- PHP 8.3 or newer
+- PHP 8.4 or newer for driver 5.14.0 and later (5.13.x requires PHP 8.3 or newer)
 - PHP PDO extension (`ext-pdo`, bundled with PHP)
 - Microsoft ODBC Driver for SQL Server (17 or 18)
 - PIE 1.x (PIE itself requires PHP 8.1+ to run)

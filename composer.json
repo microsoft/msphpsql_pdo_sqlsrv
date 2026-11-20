@@ -20,7 +20,7 @@
         "docs": "https://learn.microsoft.com/sql/connect/php/microsoft-php-driver-for-sql-server"
     },
     "require": {
-        "php": ">=8.3",
+        "php": ">=8.4",
         "ext-pdo": "*"
     },
     "php-ext": {
