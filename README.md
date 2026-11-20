@@ -14,13 +14,6 @@ pie install microsoft/pdo_sqlsrv
 `pdo_sqlsrv` builds on PHP's PDO extension, so PDO must be available (it ships
 with PHP by default). PIE enforces this via the `ext-pdo` requirement.
 
-> **Windows support (5.13.3+):** `pie install microsoft/pdo_sqlsrv` also works on
-> Windows. PIE automatically downloads the matching pre-built DLL for your PHP
-> version, thread-safety (TS/NTS), and architecture from this repository's GitHub
-> release, so no manual DLL setup is required. For 5.13.2 and earlier, use the
-> pre-built DLLs shipped with the
-> [main driver releases](https://github.com/microsoft/msphpsql/releases) instead.
-
 ## Names at a glance
 
 | Kind                         | Value                              |
@@ -32,7 +25,7 @@ with PHP by default). PIE enforces this via the `ext-pdo` requirement.
 
 ## Requirements
 
-- PHP 8.3 or newer
+- PHP 8.4 or newer for driver 5.14.0 and later (5.13.x requires PHP 8.3 or newer)
 - PHP PDO extension (`ext-pdo`, bundled with PHP)
 - Microsoft ODBC Driver for SQL Server (17 or 18)
 - PIE 1.x (PIE itself requires PHP 8.1+ to run)
